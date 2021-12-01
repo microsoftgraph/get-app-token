@@ -1,0 +1,39 @@
+{
+  "name": "get-app-token",
+  "version": "1.0.0",
+  "description": "This GitHub Action retrieves a GitHub App installation token for use in workflows",
+  "main": "lib/index.js",
+  "scripts": {
+    "format": "prettier --write **/*.ts",
+    "test": "jest",
+    "build": "tsc",
+    "package": "ncc build --source-map --license licenses.txt",
+    "all": "npm run format && npm run build && npm run test && npm run package"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/microsoftgraph/get-app-token.git"
+  },
+  "keywords": [],
+  "author": "jasonjoh",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/microsoftgraph/get-app-token/issues"
+  },
+  "homepage": "https://github.com/microsoftgraph/get-app-token#readme",
+  "prettier": {
+    "endOfLine": "auto",
+    "singleQuote": true
+  },
+  "dependencies": {
+    "@actions/core": "^1.6.0",
+    "@actions/github": "^5.0.0"
+  },
+  "devDependencies": {
+    "@vercel/ncc": "^0.32.0",
+    "jest": "^27.4.3",
+    "prettier": "^2.5.0",
+    "ts-jest": "^27.0.7",
+    "typescript": "^4.5.2"
+  }
+}
