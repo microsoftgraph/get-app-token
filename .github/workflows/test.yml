@@ -32,7 +32,7 @@ jobs:
       - name: Use token
         uses: actions/github-script@v2
         with:
-          github-token: ${{ steps.get_token.outputs.application-token }}
+          github-token: ${{ steps.get_token.outputs.app-token }}
           script: |
             const repo = await github.repos.get(context.repo);
             console.log(JSON.stringify(repo, null, 2));
