@@ -106,3 +106,5 @@ dist
 # TSC output
 lib
 
+# Private keys
+*.pem

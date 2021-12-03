@@ -27,9 +27,12 @@
   },
   "dependencies": {
     "@actions/core": "^1.6.0",
-    "@actions/github": "^5.0.0"
+    "@actions/github": "^5.0.0",
+    "jsonwebtoken": "^8.5.1"
   },
   "devDependencies": {
+    "@octokit/types": "^6.34.0",
+    "@types/jsonwebtoken": "^8.5.6",
     "@vercel/ncc": "^0.32.0",
     "jest": "^27.4.3",
     "prettier": "^2.5.0",
