@@ -20,12 +20,9 @@ async function run(): Promise<void> {
     });
     const applicationId = core.getInput('application-id', { required: true });
 
-    core.info(`Application ID: ${applicationId}`);
-
     const installToken = await getAppInstallToken(privateKey, applicationId);
     core.setSecret(installToken);
     core.setOutput('app-token', installToken);
-    core.info(JSON.stringify(installToken));
   } catch (error) {
     function isError(candidate: any): candidate is Error {
       return candidate.isError === true;
