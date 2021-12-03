@@ -67,6 +67,6 @@ jobs:
         with:
           github-token: ${{ steps.get_token.outputs.app-token }}
           script: |
-            const repo = await github.repos.get(context.repo);
+            const repo = await github.rest.repos.get(context.repo);
             console.log(JSON.stringify(repo, null, 2));
 ```
