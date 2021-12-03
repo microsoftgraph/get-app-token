@@ -30,7 +30,7 @@ jobs:
 
       # Runs a set of commands using the runners shell
       - name: Use token
-        uses: actions/github-script@v2
+        uses: actions/github-script@v5
         with:
           github-token: ${{ steps.get_token.outputs.app-token }}
           script: |
