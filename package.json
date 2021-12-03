@@ -5,7 +5,7 @@
   "main": "lib/index.js",
   "scripts": {
     "format": "prettier --write **/*.ts",
-    "test": "jest",
+    "test": "jest --passWithNoTests",
     "build": "tsc",
     "package": "ncc build --source-map --license licenses.txt",
     "all": "npm run format && npm run build && npm run test && npm run package"
