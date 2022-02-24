@@ -23,7 +23,7 @@ jobs:
           application-private-key: ${{ secrets.APPLICATION_PRIVATE_KEY }}
 
       - name: Use token
-        uses: actions/github-script@v5
+        uses: actions/github-script@v6
         with:
           github-token: ${{ steps.get_token.outputs.app-token }}
           script: |
