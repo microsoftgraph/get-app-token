@@ -30,7 +30,7 @@ jobs:
           RELEASE_BRANCHES: release
 
       - name: Create release
-        uses: ncipollo/release-action@v1.10.0
+        uses: ncipollo/release-action@v1.11.0
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
