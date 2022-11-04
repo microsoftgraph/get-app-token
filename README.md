@@ -3,6 +3,7 @@
 This GitHub Action retrieves a GitHub App installation token for use in workflows.
 
 ## Configuration
+Test
 
 ### Create a GitHub Application
 
