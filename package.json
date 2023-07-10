@@ -31,7 +31,7 @@
     "jsonwebtoken": "^8.5.1"
   },
   "devDependencies": {
-    "@octokit/types": "^8.1.1",
+    "@octokit/types": "^11.0.0",
     "@types/jsonwebtoken": "^8.5.9",
     "@vercel/ncc": "^0.36.1",
     "jest": "^27.5.1",
