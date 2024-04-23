@@ -21,6 +21,6 @@ jobs:
       - name: Verify npm all runs
         uses: actions/setup-node@v4
         with:
-          node-version: '16'
+          node-version: '20'
       - run: npm ci
       - run: npm run all
