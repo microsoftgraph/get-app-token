@@ -40,7 +40,7 @@ async function run(): Promise<void> {
 
 async function getAppInstallToken(
   privateKey: string,
-  applicationId: string
+  applicationId: string,
 ): Promise<string> {
   const now = Math.floor(Date.now() / 1000);
 
@@ -55,7 +55,7 @@ async function getAppInstallToken(
   const client = github.getOctokit(token);
 
   core.info(
-    `Getting installation for ${github.context.repo.repo} in the ${github.context.repo.owner} org`
+    `Getting installation for ${github.context.repo.repo} in the ${github.context.repo.owner} org`,
   );
 
   const installation: AppInstallationResponse = await client.request(
@@ -63,7 +63,7 @@ async function getAppInstallToken(
     {
       owner: github.context.repo.owner,
       repo: github.context.repo.repo,
-    }
+    },
   );
 
   core.info(`Installation ID: ${installation.data.id}`);
@@ -72,7 +72,7 @@ async function getAppInstallToken(
     'POST /app/installations/{installation_id}/access_tokens',
     {
       installation_id: installation.data.id,
-    }
+    },
   );
 
   return installToken.data.token;
