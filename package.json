@@ -1,6 +1,6 @@
 {
   "name": "get-app-token",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "This GitHub Action retrieves a GitHub App installation token for use in workflows",
   "main": "lib/index.js",
   "scripts": {
