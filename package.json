@@ -33,7 +33,7 @@
   "devDependencies": {
     "@octokit/types": "^13.5.0",
     "@types/jsonwebtoken": "^9.0.6",
-    "@types/node": "^20.14.2",
+    "@types/node": "^20.14.8",
     "@vercel/ncc": "^0.38.1",
     "jest": "^29.7.0",
     "prettier": "^3.3.2",
